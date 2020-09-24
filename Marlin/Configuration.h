@@ -24,8 +24,8 @@
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-5/BigTreeTech SKR 1.4 Turbo (TMC2209)"
 
 //#define E3D           // Enable for the E3D all metal hotend.
-#define E3D_Extreme     // Enable to print at over 285°C. Strongly discouraged by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term.
-#define chamber         // Enable for Heated Chamber. Thermistor should be connected to TEMP-E1, Heater to the port next to the bed heater (with the hotend heatsink fan moved to an always-on pin).
+//#define E3D_Extreme     // Enable to print at over 285°C. Strongly discouraged by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term.
+//#define chamber         // Enable for Heated Chamber. Thermistor should be connected to TEMP-E1, Heater to the port next to the bed heater (with the hotend heatsink fan moved to an always-on pin).
 #define TMC2209_Enabled // Enable for TMC2209 drivers.
 #define SKR_14_Turbo    // Enable for the SKR 1.4 turbo.
 
@@ -1436,7 +1436,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing.
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-#//define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
@@ -2030,7 +2030,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-#//define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // ReprapWorld Graphical LCD
@@ -2116,7 +2116,7 @@
 // This is RAMPS-compatible using a single 10-pin connector.
 // (For CR-10 owners who want to replace the Melzi Creality board but retain the display)
 //
-#define CR10_STOCKDISPLAY
+//#define CR10_STOCKDISPLAY
 
 //
 // Ender-2 OEM display, a variant of the MKS_MINI_12864
